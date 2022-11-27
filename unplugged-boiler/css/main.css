@@ -87,8 +87,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
 }
 
 /*** Base Header/Footer Styles ***/
@@ -103,10 +104,23 @@ footer {
 
 /*** HEADER ***/
 
+
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header .nav {
@@ -114,12 +128,14 @@ header .nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header .nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .faq {
@@ -139,13 +155,16 @@ header .nav ul {
 
 
 
-
 /*** MAIN ***/
 
 .hero-area {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero-area h1 {
+
 }
 
 .mission {
@@ -162,6 +181,22 @@ header .nav ul {
   flex-flow: row wrap;
 }
 
+.aside h3 {
+
+}
+
+.aside p {
+
+}
+
+.form {
+
+}
+
+.form h3 {
+
+}
+
 .features {
   display: flex;
   justify-content: center;
@@ -175,6 +210,18 @@ header .nav ul {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 50%;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features h3 {
+
+}
+
 .reviews {
   display: flex;
   justify-content: center;
@@ -182,31 +229,72 @@ header .nav ul {
   flex-flow: row wrap;
 }
 
+.reviews h2 {
 
+}
+
+.reviews h3{
+  width: 30%;
+}
+
+.reviews p {
+
+}
 
 /*** FOOTER ***/
 
-footer .contact-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-footer .social-icons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer {
+  flex-direction: column;
 }
 
 footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
-.copyright {
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
+
+footer .contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+footer h1 {
+
+}
+
+footer .social-icons { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons h1 {
+
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
+
+
+
+
+
 
 
 
