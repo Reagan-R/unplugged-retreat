@@ -87,11 +87,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* General Styles */
 
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
+   html {
+    font-size: 16px;
+   }
+
+   body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+   }
+
+   ul, 
+   ol {
+    list-style-type: none;
+   }
+
+   a {
+    color: #e2e3ed;
+    text-decoration: none;
+   }
+
+   h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+   }
+
+   h3, 
+   h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+    margin: 20px 0;
+   }
+
+   p {
+    font-size: .875em;
+    line-height: 1.285;
+   }
+
+   img {
+
+   }
+
+   figure {
+
+   }
+
+   address {
+    font-family: 'Open-sans', sans-serif;
+    font-style: normal;
+   }
+
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+   }
+
 
 /*** Base Header/Footer Styles ***/
 
@@ -106,6 +158,7 @@ footer {
 
 header {
   padding: 15px 0;
+  background-color: #000;
 }
 
 header .content-wrapper {
@@ -138,30 +191,58 @@ header .nav ul {
   font-size: 1em;
 }
 
-.faq {
+footer {
+  flex-direction: column;
+  background-color: #000;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+  color: #eee;
+}
+
+footer h1 {
+  color: #eee;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
 }
 
-.faq .content-wrapper {
+footer .copyright {
+  margin: 20px 0;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 1em;
+  color: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  flex-flow: row wrap;
 }
 
 
 
-
-/*** MAIN ***/
+/*** MAIN Mobile Styles Homepage ***/
 
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
 }
 
 .hero-area h1 {
@@ -183,31 +264,24 @@ header .nav ul {
   flex-flow: row wrap;
 }
 
-.aside h3 {
-  font-family: "poppins";
-  font-size: 1em;
-}
-
-.aside p {
-  font-family: "open-sans";
-  font-size: 0.75em;
-  line-height: 1em;
-}
 
 .form {
   background-color: #527158;
-
-}
-
-.form h3 {
-  font-family: "poppins";
-  font-size: 1em;
 }
 
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -217,103 +291,28 @@ header .nav ul {
   flex-flow: row wrap;
 }
 
-.features article {
-  width: 50%;
-}
-
 .features p {
   margin: 0;
 }
 
-.features h3 {
-  font-family: "poppins";
-  font-size: 2em;
-}
+/*** Reviews ***/
 
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
 }
 
 .reviews h2 {
-  font-family: "poppins";
-  font-size: 2em;
+  margin-bottom: 40px;
 }
 
 .reviews h3{
-  font-size: 1em;
-  width: 30%;
-}
-
-.reviews p {
-  font-family: "open sans";
-  font-size: 0.75em;
-}
-
-/*** FOOTER ***/
-
-footer {
-  flex-direction: column;
-  background-color: #202322;
-}
-
-footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  color: #ffffff;
-}
-
-footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
-}
-
-footer .contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin-bottom: 50px;
-}
-
-footer .contact h1 {
-  font-family: "poppins";
-  font-size: 1.25em;
-  color: #ffffff;
-}
-
-footer .contact address p {
-  font-family: open-sans, sans-serif;
-  font-size: 1em;
-}
-
-footer .social-icons { 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social-icons h1 {
-  font-size: 1em;
-  color: #ffffff;
-}
-
-footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .copyright {
   margin: 20px 0;
-  font-family: open-sans, sans-serif;
-  font-size: 1em;
 }
+
 
 
 
