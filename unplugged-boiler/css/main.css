@@ -137,6 +137,7 @@ textarea {
    }
 
    figure {
+    margin: 0;
    }
 
    address {
@@ -161,6 +162,13 @@ footer {
   background-color: #202322;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 header {
   padding: 15px 0;
@@ -559,6 +567,14 @@ h3 {
 header {
   justify-content: space-between;
   padding: 33px 0;
+}
+
+header figure {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .content-wrapper {
