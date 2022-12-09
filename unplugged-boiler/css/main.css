@@ -281,14 +281,6 @@ footer .copyright {
   line-height: 1.2; 
 }
 
-
-.mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 aside {
   display: flex;
   justify-content: center;
@@ -400,8 +392,8 @@ input[type=button] {
   padding-left: 10px;
 }
 
-/* =============== ABOUT PAGE =============== */
-
+/* ========================================================
+==================  ABOUT PAGE ============================ */
 
 header figure {
   width: 60%;
@@ -409,36 +401,17 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-left: 50px;
 }
 
 header {
   padding: 15px 0;
 }
 
-header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  margin: 0;
-}
-
-header .header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-  background: #3a3a3a;
-}
-
 header nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
-  font-size: 1.125em;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 header nav ul {
@@ -448,27 +421,13 @@ header nav ul {
   width: 100%;
 }
 
-header nav ul li {
-  font-family: 'Open-sans' bold;
-  font-size: 1.125em;
-}
-
-.mission-content {
+.mission {
   background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 20px;
-}
-
-.mission-content p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   padding-left: 20px;
-  font-size: 14px;
 }
 
 .map figure {
@@ -490,9 +449,11 @@ header nav ul li {
 .contact-section {
   background-color: #2a423a;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+  padding-left: 20px;
 }
   
 .contact-content p {
